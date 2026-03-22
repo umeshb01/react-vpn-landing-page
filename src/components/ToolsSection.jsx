@@ -1,5 +1,5 @@
 import React from 'react';
-import { Smartphone, Zap, Globe, Route, ShieldAlert, Monitor, Laptop, Server, Wifi, Download } from 'lucide-react';
+import { Smartphone, Zap, Globe, Route, ShieldAlert, Monitor, Laptop, Server, Wifi, Download, HelpCircle, ArrowRight } from 'lucide-react';
 
 const ToolsSection = () => {
   return (
@@ -118,73 +118,98 @@ const ToolsSection = () => {
         </div>
 
         {/* 3. DEVICE SUPPORT SECTION */}
-        <div className="text-center mb-12">
-          <h2 className="text-4xl md:text-5xl font-extrabold text-white mb-6">
-            Your VPN Ready on Every Device
-          </h2>
-          <p className="text-gray-400 text-lg md:text-xl max-w-2xl mx-auto leading-relaxed">
-            A single subscription covers your entire tech ecosystem. Native applications perfectly optimized for all major operating systems.
-          </p>
+        <div className="mb-16">
+          {/* Section Heading */}
+          <div className="max-w-3xl mb-4">
+            <h2 className="text-4xl md:text-5xl font-extrabold text-white leading-tight text-left">
+              Your VPN Ready on Every Device
+            </h2>
+          </div>
+          
+          {/* Sub-header Content */}
+          <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-10">
+            <p className="text-gray-400 text-lg md:text-xl leading-relaxed max-w-xl">
+              A single subscription covers your entire tech ecosystem. Native applications perfectly optimized for all major operating systems.
+            </p>
+
+            <div className="flex items-center gap-6 transition-all group cursor-pointer hover:-translate-y-1">
+              <div className="bg-white/5 p-4 rounded-2xl group-hover:bg-cyan-500/10 transition-colors shadow-inner border border-white/5">
+                <HelpCircle className="w-8 h-8 text-cyan-400" />
+              </div>
+              <div className="pr-2">
+                <h4 className="text-white font-bold text-lg mb-1 leading-tight">Need help with installation?</h4>
+                <p className="text-gray-400 text-sm flex items-center gap-1.5 group-hover:text-white transition-colors">
+                  Visit help center <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
 
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 lg:gap-6">
 
           {/* Windows */}
           <div className="bg-white/5 border border-white/10 rounded-2xl p-6 flex flex-col items-center hover:bg-white/10 transition-all duration-300 group cursor-pointer shadow-md hover:shadow-[0_10px_30px_rgba(56,189,248,0.15)] hover:-translate-y-1 backdrop-blur-sm">
-            <Monitor className="w-10 h-10 text-white mb-4 group-hover:scale-110 transition-transform" />
+            <div className="bg-white/10 p-7 rounded-2xl shadow-lg mb-4 group-hover:scale-110 transition-transform">
+              <Monitor className="w-10 h-10 text-white" />
+            </div>
             <h4 className="text-white font-bold mb-4 text-base md:text-lg">Windows</h4>
-            <div className="text-white opacity-60 text-sm font-medium flex items-center group-hover:opacity-100 transition-opacity">
-              <Download className="w-4 h-4 mr-1" />
+            <div className="bg-white text-black px-6 py-2 rounded-xl text-sm font-bold shadow-sm hover:translate-y-[-2px] transition-all">
               Download
             </div>
           </div>
 
           {/* Android */}
           <div className="bg-white/5 border border-white/10 rounded-2xl p-6 flex flex-col items-center hover:bg-white/10 transition-all duration-300 group cursor-pointer shadow-md hover:shadow-[0_10px_30px_rgba(52,211,153,0.15)] hover:-translate-y-1 backdrop-blur-sm">
-            <Smartphone className="w-10 h-10 text-white mb-4 group-hover:scale-110 transition-transform" />
+            <div className="bg-white/10 p-7 rounded-2xl shadow-lg mb-4 group-hover:scale-110 transition-transform">
+              <Smartphone className="w-10 h-10 text-white" />
+            </div>
             <h4 className="text-white font-bold mb-4 text-base md:text-lg">Android</h4>
-            <div className="text-white opacity-60 text-sm font-medium flex items-center group-hover:opacity-100 transition-opacity">
-              <Download className="w-4 h-4 mr-1" />
+            <div className="bg-white text-black px-6 py-2 rounded-xl text-sm font-bold shadow-sm hover:translate-y-[-2px] transition-all">
               Download
             </div>
           </div>
 
           {/* macOS */}
           <div className="bg-white/5 border border-white/10 rounded-2xl p-6 flex flex-col items-center hover:bg-white/10 transition-all duration-300 group cursor-pointer shadow-md hover:shadow-[0_10px_30px_rgba(255,255,255,0.15)] hover:-translate-y-1 backdrop-blur-sm">
-            <Laptop className="w-10 h-10 text-white mb-4 group-hover:scale-110 transition-transform" />
+            <div className="bg-white/10 p-7 rounded-2xl shadow-lg mb-4 group-hover:scale-110 transition-transform">
+              <Laptop className="w-10 h-10 text-white" />
+            </div>
             <h4 className="text-white font-bold mb-4 text-base md:text-lg">macOS</h4>
-            <div className="text-white opacity-60 text-sm font-medium flex items-center group-hover:opacity-100 transition-opacity">
-              <Download className="w-4 h-4 mr-1" />
+            <div className="bg-white text-black px-6 py-2 rounded-xl text-sm font-bold shadow-sm hover:translate-y-[-2px] transition-all">
               Download
             </div>
           </div>
 
           {/* iOS */}
           <div className="bg-white/5 border border-white/10 rounded-2xl p-6 flex flex-col items-center hover:bg-white/10 transition-all duration-300 group cursor-pointer shadow-md hover:shadow-[0_10px_30px_rgba(59,130,246,0.15)] hover:-translate-y-1 backdrop-blur-sm">
-            <Smartphone className="w-10 h-10 text-white mb-4 group-hover:scale-110 transition-transform" />
+            <div className="bg-white/10 p-7 rounded-2xl shadow-lg mb-4 group-hover:scale-110 transition-transform">
+              <Smartphone className="w-10 h-10 text-white" />
+            </div>
             <h4 className="text-white font-bold mb-4 text-base md:text-lg">iOS</h4>
-            <div className="text-white opacity-60 text-sm font-medium flex items-center group-hover:opacity-100 transition-opacity">
-              <Download className="w-4 h-4 mr-1" />
+            <div className="bg-white text-black px-6 py-2 rounded-xl text-sm font-bold shadow-sm hover:translate-y-[-2px] transition-all">
               Download
             </div>
           </div>
 
           {/* Linux */}
           <div className="bg-white/5 border border-white/10 rounded-2xl p-6 flex flex-col items-center hover:bg-white/10 transition-all duration-300 group cursor-pointer shadow-md hover:shadow-[0_10px_30px_rgba(250,204,21,0.15)] hover:-translate-y-1 backdrop-blur-sm">
-            <Server className="w-10 h-10 text-white mb-4 group-hover:scale-110 transition-transform" />
+            <div className="bg-white/10 p-7 rounded-2xl shadow-lg mb-4 group-hover:scale-110 transition-transform">
+              <Server className="w-10 h-10 text-white" />
+            </div>
             <h4 className="text-white font-bold mb-4 text-base md:text-lg">Linux</h4>
-            <div className="text-white opacity-60 text-sm font-medium flex items-center group-hover:opacity-100 transition-opacity">
-              <Download className="w-4 h-4 mr-1" />
+            <div className="bg-white text-black px-6 py-2 rounded-xl text-sm font-bold shadow-sm hover:translate-y-[-2px] transition-all">
               Download
             </div>
           </div>
 
           {/* Routers */}
           <div className="bg-white/5 border border-white/10 rounded-2xl p-6 flex flex-col items-center hover:bg-white/10 transition-all duration-300 group cursor-pointer shadow-md hover:shadow-[0_10px_30px_rgba(168,85,247,0.15)] hover:-translate-y-1 backdrop-blur-sm">
-            <Wifi className="w-10 h-10 text-white mb-4 group-hover:scale-110 transition-transform" />
+            <div className="bg-white/10 p-7 rounded-2xl shadow-lg mb-4 group-hover:scale-110 transition-transform">
+              <Wifi className="w-10 h-10 text-white" />
+            </div>
             <h4 className="text-white font-bold mb-4 text-base md:text-lg">Routers</h4>
-            <div className="text-white opacity-60 text-sm font-medium flex items-center group-hover:opacity-100 transition-opacity">
-              <Download className="w-4 h-4 mr-1" />
+            <div className="bg-white text-black px-6 py-2 rounded-xl text-sm font-bold shadow-sm hover:translate-y-[-2px] transition-all">
               Download
             </div>
           </div>

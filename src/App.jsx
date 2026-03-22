@@ -4,6 +4,8 @@ import Hero from './components/Hero';
 import Benefits from './components/Benefits';
 import Features from './components/Features';
 import ToolsSection from './components/ToolsSection';
+import Testimonials from './components/Testimonials';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -15,7 +17,10 @@ function App() {
         <Features />
         <Benefits />
         <ToolsSection />
+        <Testimonials />
       </main>
+
+      <Footer />
     </div>
   );
 }
