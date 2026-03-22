@@ -3,6 +3,7 @@ import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Benefits from './components/Benefits';
 import Features from './components/Features';
+import ToolsSection from './components/ToolsSection';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Hero />
         <Features />
         <Benefits />
+        <ToolsSection />
       </main>
     </div>
   );
