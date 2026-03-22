@@ -8,43 +8,43 @@ const ToolsSection = () => {
       <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-indigo-500/10 rounded-full blur-[150px] pointer-events-none"></div>
       <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-cyan-500/10 rounded-full blur-[150px] pointer-events-none"></div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        
+      <div className="max-w-7xl mx-auto px-4 sm:px-8 lg:px-12 py-16 border border-white/10 rounded-[2.5rem] relative z-10 bg-[#050505]/30 backdrop-blur-sm">
+
         {/* 1. TOP SECTION (Showcase) */}
-        <div className="flex flex-col-reverse lg:flex-row gap-16 lg:gap-12 items-center mb-32">
+        <div className="flex flex-col-reverse lg:flex-row gap-16 lg:gap-12 items-center pb-20 mb-20 border-b border-white/10">
           {/* Left Side: Mockup Image */}
           <div className="w-full lg:w-1/2 flex justify-center">
-             {/* Mockup Frame */}
-             <div className="w-[300px] h-[600px] bg-[#050505] rounded-[3rem] border-[8px] border-white/10 shadow-[0_20px_50px_rgba(56,189,248,0.15)] relative overflow-hidden flex flex-col group hover:shadow-[0_20px_60px_rgba(56,189,248,0.25)] transition-all duration-500">
-                <div className="w-1/2 h-6 bg-white/10 mx-auto rounded-b-xl absolute top-0 inset-x-0 z-20"></div>
-                {/* Simulated UI inside phone */}
-                <div className="flex-1 p-6 flex flex-col justify-center gap-12 mt-8 relative z-10">
-                   <div className="text-center">
-                     <div className="w-24 h-24 mx-auto rounded-full bg-gradient-to-br from-cyan-400 to-indigo-600 flex items-center justify-center p-0.5 mb-6 shadow-[0_0_30px_rgba(56,189,248,0.4)] animate-pulse">
-                        <div className="w-full h-full bg-[#050505] rounded-full flex items-center justify-center">
-                           <ShieldAlert className="w-10 h-10 text-cyan-400" />
-                        </div>
-                     </div>
-                     <h4 className="text-white font-bold text-2xl">Connected</h4>
-                     <p className="text-emerald-400 text-sm mt-1 font-medium">Your IP is hidden</p>
-                   </div>
-                   
-                   <div className="space-y-4">
-                     <div className="bg-white/5 rounded-2xl p-4 flex items-center justify-between border border-white/10">
-                       <div className="flex flex-col">
-                         <span className="text-gray-400 text-xs uppercase tracking-wider mb-1">Location</span>
-                         <span className="text-white font-bold text-sm">Paris, France</span>
-                       </div>
-                       <Globe className="w-6 h-6 text-cyan-400" />
-                     </div>
-                     <button className="w-full bg-gradient-to-r from-red-500 to-rose-600 text-white rounded-xl py-3.5 font-bold shadow-md hover:shadow-xl transition-shadow cursor-pointer">
-                       Disconnect
-                     </button>
-                   </div>
+            {/* Mockup Frame */}
+            <div className="w-[300px] h-[600px] bg-[#050505] rounded-[3rem] border-[8px] border-white/10 shadow-[0_20px_50px_rgba(56,189,248,0.15)] relative overflow-hidden flex flex-col group hover:shadow-[0_20px_60px_rgba(56,189,248,0.25)] transition-all duration-500">
+              <div className="w-1/2 h-6 bg-white/10 mx-auto rounded-b-xl absolute top-0 inset-x-0 z-20"></div>
+              {/* Simulated UI inside phone */}
+              <div className="flex-1 p-6 flex flex-col justify-center gap-12 mt-8 relative z-10">
+                <div className="text-center">
+                  <div className="w-24 h-24 mx-auto rounded-full bg-gradient-to-br from-cyan-400 to-indigo-600 flex items-center justify-center p-0.5 mb-6 shadow-[0_0_30px_rgba(56,189,248,0.4)] animate-pulse">
+                    <div className="w-full h-full bg-[#050505] rounded-full flex items-center justify-center">
+                      <ShieldAlert className="w-10 h-10 text-cyan-400" />
+                    </div>
+                  </div>
+                  <h4 className="text-white font-bold text-2xl">Connected</h4>
+                  <p className="text-emerald-400 text-sm mt-1 font-medium">Your IP is hidden</p>
                 </div>
-                {/* Ambient glow inside phone */}
-                <div className="absolute inset-0 bg-gradient-to-b from-transparent to-cyan-500/10 pointer-events-none"></div>
-             </div>
+
+                <div className="space-y-4">
+                  <div className="bg-white/5 rounded-2xl p-4 flex items-center justify-between border border-white/10">
+                    <div className="flex flex-col">
+                      <span className="text-gray-400 text-xs uppercase tracking-wider mb-1">Location</span>
+                      <span className="text-white font-bold text-sm">Paris, France</span>
+                    </div>
+                    <Globe className="w-6 h-6 text-cyan-400" />
+                  </div>
+                  <button className="w-full bg-gradient-to-r from-red-500 to-rose-600 text-white rounded-xl py-3.5 font-bold shadow-md hover:shadow-xl transition-shadow cursor-pointer">
+                    Disconnect
+                  </button>
+                </div>
+              </div>
+              {/* Ambient glow inside phone */}
+              <div className="absolute inset-0 bg-gradient-to-b from-transparent to-cyan-500/10 pointer-events-none"></div>
+            </div>
           </div>
 
           {/* Right Side: Text */}
@@ -66,9 +66,9 @@ const ToolsSection = () => {
         </div>
 
         {/* 2. FEATURE GRID */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8 mb-32">
+        <div className="grid grid-cols-1 md:grid-cols-2 mb-32 relative z-10 border border-white/10">
           {/* Card 1 */}
-          <div className="bg-white/5 border border-white/10 rounded-3xl p-6 lg:p-8 hover:bg-white/10 transition-all duration-300 shadow-md hover:shadow-[0_10px_40px_rgba(0,0,0,0.5)] group backdrop-blur-sm flex items-start gap-5 lg:gap-6">
+          <div className="p-8 lg:p-12 border-b md:border-r border-white/10 flex items-start gap-5 lg:gap-6 group hover:bg-white/[0.02] transition-colors">
             <div className="bg-white/5 w-14 h-14 rounded-2xl flex items-center justify-center shrink-0 border border-white/10 group-hover:scale-110 transition-transform duration-300">
               <Zap className="w-7 h-7 text-white" />
             </div>
@@ -80,7 +80,7 @@ const ToolsSection = () => {
             </div>
           </div>
           {/* Card 2 */}
-          <div className="bg-white/5 border border-white/10 rounded-3xl p-6 lg:p-8 hover:bg-white/10 transition-all duration-300 shadow-md hover:shadow-[0_10px_40px_rgba(0,0,0,0.5)] group backdrop-blur-sm flex items-start gap-5 lg:gap-6">
+          <div className="p-8 lg:p-12 border-b border-white/10 flex items-start gap-5 lg:gap-6 group hover:bg-white/[0.02] transition-colors">
             <div className="bg-white/5 w-14 h-14 rounded-2xl flex items-center justify-center shrink-0 border border-white/10 group-hover:scale-110 transition-transform duration-300">
               <Globe className="w-7 h-7 text-white" />
             </div>
@@ -92,7 +92,7 @@ const ToolsSection = () => {
             </div>
           </div>
           {/* Card 3 */}
-          <div className="bg-white/5 border border-white/10 rounded-3xl p-6 lg:p-8 hover:bg-white/10 transition-all duration-300 shadow-md hover:shadow-[0_10px_40px_rgba(0,0,0,0.5)] group backdrop-blur-sm flex items-start gap-5 lg:gap-6">
+          <div className="p-8 lg:p-12 border-b md:border-b-0 md:border-r border-white/10 flex items-start gap-5 lg:gap-6 group hover:bg-white/[0.02] transition-colors">
             <div className="bg-white/5 w-14 h-14 rounded-2xl flex items-center justify-center shrink-0 border border-white/10 group-hover:scale-110 transition-transform duration-300">
               <Route className="w-7 h-7 text-white" />
             </div>
@@ -104,7 +104,7 @@ const ToolsSection = () => {
             </div>
           </div>
           {/* Card 4 */}
-          <div className="bg-white/5 border border-white/10 rounded-3xl p-6 lg:p-8 hover:bg-white/10 transition-all duration-300 shadow-md hover:shadow-[0_10px_40px_rgba(0,0,0,0.5)] group backdrop-blur-sm flex items-start gap-5 lg:gap-6">
+          <div className="p-8 lg:p-12 flex items-start gap-5 lg:gap-6 group hover:bg-white/[0.02] transition-colors">
             <div className="bg-white/5 w-14 h-14 rounded-2xl flex items-center justify-center shrink-0 border border-white/10 group-hover:scale-110 transition-transform duration-300">
               <ShieldAlert className="w-7 h-7 text-white" />
             </div>
@@ -128,7 +128,7 @@ const ToolsSection = () => {
         </div>
 
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 lg:gap-6">
-          
+
           {/* Windows */}
           <div className="bg-white/5 border border-white/10 rounded-2xl p-6 flex flex-col items-center hover:bg-white/10 transition-all duration-300 group cursor-pointer shadow-md hover:shadow-[0_10px_30px_rgba(56,189,248,0.15)] hover:-translate-y-1 backdrop-blur-sm">
             <Monitor className="w-10 h-10 text-white mb-4 group-hover:scale-110 transition-transform" />
@@ -188,7 +188,7 @@ const ToolsSection = () => {
               Download
             </div>
           </div>
-          
+
         </div>
       </div>
     </section>
