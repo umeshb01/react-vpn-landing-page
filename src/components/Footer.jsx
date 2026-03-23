@@ -20,7 +20,7 @@ const Footer = () => {
                 Veilux
               </span>
             </div>
-            <p className="text-white/60 text-lg leading-relaxed mb-8 font-bold">
+            <p className="text-white/60 text-lg leading-relaxed mb-8 font-bolda">
               fast and secured vpn designed for privacy ,protection and open access on every device
             </p>
           </div>

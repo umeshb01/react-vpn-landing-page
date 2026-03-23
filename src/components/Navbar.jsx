@@ -29,12 +29,12 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`fixed top-4 left-1/2 -translate-x-1/2 w-[calc(100%-2rem)] md:w-[calc(100%-4rem)] max-w-7xl z-50 transition-all duration-300 rounded-2xl border ${isScrolled
+      className={`  mx-auto w-[calc(100%-2rem)] md:w-[calc(100%-4rem)] max-w-3xl  transition-all duration-300 rounded-2xl border ${isScrolled
         ? 'py-3 backdrop-blur-xl bg-[#0a0a0a]/80 shadow-[0_8px_30px_rgba(0,0,0,0.8)] border-white/10'
         : 'py-3 md:py-4 bg-[#0a0a0a] border-white/5 shadow-2xl shadow-black/50'
         }`}
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-3xl mx-auto px-4 sm:px-6  ">
         <div className="flex justify-between items-center">
 
           {/* Logo Section */}
@@ -42,7 +42,7 @@ const Navbar = () => {
             <div className="bg-gradient-to-br from-cyan-400 to-indigo-600 p-2 rounded-xl group-hover:scale-105 transition-transform duration-300 shadow-[0_0_15px_rgba(56,189,248,0.4)]">
               <Shield className="w-6 h-6 text-white" />
             </div>
-            <span className="text-2xl font-extrabold tracking-tight bg-clip-text text-transparent ">
+            <span className="text-2xl font-bold tracking-tight text-gray-300">
               Veilux
             </span>
           </div>

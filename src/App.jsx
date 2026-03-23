@@ -2,6 +2,7 @@ import React from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Benefits from './components/Benefits';
+import PricingPlans from './components/PricingPlans';
 import Features from './components/Features';
 import ToolsSection from './components/ToolsSection';
 import Testimonials from './components/Testimonials';
@@ -18,6 +19,7 @@ function App() {
         <Benefits />
         <ToolsSection />
         <Testimonials />
+        <PricingPlans />
       </main>
 
       <Footer />

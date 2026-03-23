@@ -38,9 +38,9 @@ const Testimonials = () => {
       {/* Background Glows */}
       <div className="absolute top-1/4 -left-20 w-[600px] h-[600px] bg-indigo-600/10 rounded-full blur-[120px] pointer-events-none"></div>
       <div className="absolute bottom-1/4 -right-20 w-[600px] h-[600px] bg-purple-600/10 rounded-full blur-[120px] pointer-events-none"></div>
-      
+
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        
+
         {/* Header Section */}
         <div className="text-center max-w-2xl mx-auto mb-20 px-4">
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-white/10 bg-white/5 text-white text-sm font-medium mb-6 backdrop-blur-sm">
@@ -58,7 +58,7 @@ const Testimonials = () => {
         {/* Testimonials Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-4 xl:gap-6">
           {testimonials.map((item, index) => (
-            <div 
+            <div
               key={index}
               className="group bg-gradient-to-br from-white/10 to-transparent border border-white/10 rounded-[2rem] p-6 lg:p-5 xl:p-8 backdrop-blur-lg hover:border-purple-500/30 transition-all duration-500 hover:shadow-[0_20px_50px_rgba(147,51,234,0.1)] hover:-translate-y-2"
             >
