@@ -3,7 +3,7 @@ import { ShieldCheck, ArrowRight, Globe, Lock, CheckCircle2, Server } from 'luci
 
 const Features = () => {
   return (
-    <section id="features" className="py-24 bg-[#0a0a0a] relative overflow-hidden">
+    <section id="features" className="py-16 bg-[#0a0a0a] relative overflow-hidden">
       {/* Subtle background gradient */}
       <div className="absolute inset-0 bg-gradient-to-br from-indigo-900/10 via-transparent to-transparent pointer-events-none"></div>
 
@@ -28,10 +28,10 @@ const Features = () => {
 
             {/* Content gap buffer for layout flow if not using justify-between entirely depending on screen size */}
             <div className="flex-grow flex flex-col justify-center">
-              <h2 className="text-4xl md:text-5xl font-extrabold text-white mb-6 tracking-tight">
+              <h2 className="text-3xl md:text-4xl font-extrabold text-white mb-6 tracking-tight">
                 Online freedom
               </h2>
-              <p className="text-white text-lg leading-relaxed mb-8 max-w-md">
+              <p className="text-white text-base md:text-lg leading-relaxed mb-8 max-w-md">
                 Evade all geographical restrictions and maintain your true privacy at all times. Experience an unrestricted web with maximum security.
               </p>
               <a href="#plans" className="inline-flex items-center text-white font-bold hover:text-gray-300 transition-colors group w-max">

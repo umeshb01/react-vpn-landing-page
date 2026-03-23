@@ -34,7 +34,7 @@ const testimonials = [
 
 const Testimonials = () => {
   return (
-    <section id="testimonials" className="py-24 bg-[#050505] relative overflow-hidden">
+    <section id="testimonials" className="py-16 bg-[#050505] relative overflow-hidden">
       {/* Background Glows */}
       <div className="absolute top-1/4 -left-20 w-[600px] h-[600px] bg-indigo-600/10 rounded-full blur-[120px] pointer-events-none"></div>
       <div className="absolute bottom-1/4 -right-20 w-[600px] h-[600px] bg-purple-600/10 rounded-full blur-[120px] pointer-events-none"></div>
@@ -47,7 +47,7 @@ const Testimonials = () => {
             <MessageSquare className="w-4 h-4 text-white" />
             CUSTOMER REVIEWS
           </div>
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white mb-6 leading-tight tracking-tight">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-white mb-6 leading-tight tracking-tight">
             Trusted by Who Want Faster and Safer Internet
           </h2>
           <p className="text-white text-lg md:text-xl leading-relaxed opacity-80">

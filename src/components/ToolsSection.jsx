@@ -3,12 +3,12 @@ import { Smartphone, Zap, Globe, Route, ShieldAlert, Monitor, Laptop, Server, Wi
 
 const ToolsSection = () => {
   return (
-    <section id="tools" className="py-24 bg-[#0a0a0a] relative overflow-hidden">
+    <section id="tools" className="py-16 bg-[#0a0a0a] relative overflow-hidden">
       {/* Background Glow */}
       <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-indigo-500/10 rounded-full blur-[150px] pointer-events-none"></div>
       <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-cyan-500/10 rounded-full blur-[150px] pointer-events-none"></div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-8 lg:px-12 py-16 border border-white/10 rounded-[2.5rem] relative z-10 bg-[#050505]/30 backdrop-blur-sm">
+      <div className="max-w-7xl mx-auto px-4 sm:px-8 lg:px-12 py-12 border border-white/10 rounded-[2.5rem] relative z-10 bg-[#050505]/30 backdrop-blur-sm">
 
         {/* 1. TOP SECTION (Showcase) */}
         <div className="flex flex-col-reverse lg:flex-row gap-16 lg:gap-12 items-center pb-20 mb-20 border-b border-white/10">
@@ -53,13 +53,13 @@ const ToolsSection = () => {
               <Zap className="w-4 h-4 text-cyan-400" />
               VPN FEATURES
             </div>
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white mb-6 leading-tight tracking-tight">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-white mb-6 leading-tight tracking-tight">
               Tools That Make Your VPN More Powerful
             </h2>
-            <p className="text-gray-400 text-lg md:text-xl leading-relaxed mb-10">
+            <p className="text-gray-400 text-base md:text-lg leading-relaxed mb-10">
               Take complete control over your internet connection. Customize your security protocols, manage per-app routing, and automatically select the fastest servers available worldwide with just a single tap.
             </p>
-            <button className="w-full sm:w-auto px-8 py-4 rounded-xl bg-gradient-to-r from-cyan-500 to-indigo-600 text-white font-bold text-lg hover:from-cyan-400 hover:to-indigo-500 hover:shadow-[0_0_30px_rgba(56,189,248,0.4)] transition-all duration-300 transform hover:-translate-y-1">
+            <button className="w-full sm:w-auto px-6 py-3 rounded-xl bg-gradient-to-r from-cyan-500 to-indigo-600 text-white font-bold text-base hover:from-cyan-400 hover:to-indigo-500 hover:shadow-[0_0_30px_rgba(56,189,248,0.4)] transition-all duration-300 transform hover:-translate-y-1">
               Get Started
             </button>
           </div>
@@ -121,14 +121,14 @@ const ToolsSection = () => {
         <div className="mb-16">
           {/* Section Heading */}
           <div className="max-w-3xl mb-4">
-            <h2 className="text-4xl md:text-5xl font-extrabold text-white leading-tight text-left">
+            <h2 className="text-3xl md:text-4xl font-extrabold text-white leading-tight text-left">
               Your VPN Ready on Every Device
             </h2>
           </div>
-          
+
           {/* Sub-header Content */}
           <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-10">
-            <p className="text-gray-400 text-lg md:text-xl leading-relaxed max-w-xl">
+            <p className="text-gray-400 text-base md:text-lg leading-relaxed max-w-xl">
               A single subscription covers your entire tech ecosystem. Native applications perfectly optimized for all major operating systems.
             </p>
 

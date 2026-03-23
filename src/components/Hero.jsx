@@ -3,8 +3,8 @@ import { Shield, Lock } from 'lucide-react';
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center pt-32 pb-16 md:pt-40 md:pb-24 overflow-hidden bg-transparent">
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center flex flex-col items-center">
+    <section className="relative min-h-[90vh] flex items-center justify-center pt-24 pb-12 md:pt-32 md:pb-20 overflow-hidden bg-transparent">
+      <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center flex flex-col items-center">
 
         {/* Small Badge */}
         <div className="inline-flex items-center gap-2 px-4 py-1 rounded-full  border border-white/10 text-white text-sm font-medium mb-8 backdrop-blur-sm shadow-[0_0_20px_rgba(34,211,238,0.1)]">
@@ -13,7 +13,7 @@ const Hero = () => {
         </div>
 
         {/* Big Heading */}
-        <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight text-white mb-6 md:mb-8 drop-shadow-lg leading-tight px-2">
+        <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-6xl font-extrabold tracking-tight text-white mb-6 md:mb-8 drop-shadow-lg leading-tight px-2">
           Unlock Access with <br className="hidden sm:block" />
           <span className="text-white bg-clip-text">
             total privacy

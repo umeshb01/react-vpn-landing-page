@@ -3,15 +3,15 @@ import { ShieldCheck, Lock, Globe, Zap } from 'lucide-react';
 
 const Benefits = () => {
   return (
-    <section id="benefits" className="py-24 bg-[#0a0a0a] relative overflow-hidden">
+    <section id="benefits" className="py-16 bg-[#0a0a0a] relative overflow-hidden">
       {/* Subtle Background Gradient Overlay */}
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-white/[0.02] to-transparent pointer-events-none"></div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
 
         {/* Centered Top Paragraph */}
-        <div className="text-center max-w-5xl mx-auto mt-4 mb-16 sm:mb-20 px-6 sm:px-12">
-          <p className="text-white text-xl md:text-4xl font-bold tracking-wide leading-relaxed lg:px-16">
+        <div className="text-center max-w-5xl mx-auto mt-4 mb-12 sm:mb-16 px-6 sm:px-12">
+          <p className="text-white text-lg md:text-2xl font-bold tracking-wide leading-relaxed lg:px-16">
             Built for your online needs, this vpn offers fast performance,solid security,and full access on any device.Wheather you browse,streame or work,it keeps you protected with smooth experience.
           </p>
         </div>
@@ -25,7 +25,7 @@ const Benefits = () => {
               VPN Benefits
             </div>
 
-            <h2 className="text-4xl md:text-5xl font-extrabold text-white tracking-tight leading-tight">
+            <h2 className="text-3xl md:text-4xl font-extrabold text-white tracking-tight leading-tight">
               Powerful security <br className="hidden md:block" />
               for everyday use
             </h2>

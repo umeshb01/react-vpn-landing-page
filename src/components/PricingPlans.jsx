@@ -52,15 +52,15 @@ const PricingPlans = () => {
   ];
 
   return (
-    <section id="plans" className="py-24 bg-[#0f172a] relative overflow-hidden border-y border-white/5">
+    <section id="plans" className="py-16 bg-[#0f172a] relative overflow-hidden border-y border-white/5">
       {/* Background Decorative Element */}
       <div className="absolute top-0 left-0 w-full h-full opacity-10 pointer-events-none">
         <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-cyan-500 rounded-full blur-[100px]"></div>
         <div className="absolute bottom-1/4 right-1/4 w-64 h-64 bg-indigo-500 rounded-full blur-[100px]"></div>
       </div>
 
-      <div className="max-w-6xl mx-auto px-6 sm:px-12 lg:px-16 relative z-10 border border-white/10 rounded-[2.5rem] py-16 md:py-24 bg-white/[0.02] backdrop-blur-2xl shadow-inner shadow-white/5">
-        
+      <div className="max-w-6xl mx-auto px-6 sm:px-12 lg:px-16 relative z-10 border border-white/10 rounded-[2.5rem] py-12 md:py-16 bg-white/[0.02] backdrop-blur-2xl shadow-inner shadow-white/5">
+
         {/* Header Section */}
         <div className="flex flex-col lg:flex-row justify-between items-start lg:items-end gap-12 mb-20">
           <div className="max-w-2xl">
@@ -68,7 +68,7 @@ const PricingPlans = () => {
               <Zap className="w-4 h-4 text-cyan-400" />
               VPN PLANS
             </div>
-            <h2 className="text-4xl md:text-5xl lg:text-3xl font-bold text-white mb-6 leading-tight">
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-6 leading-tight">
               Choose the Plans That Fits Your Online Life
             </h2>
             <div className="inline-flex items-center gap-3 px-4 py-2 rounded-full border border-cyan-500/30 bg-cyan-500/10 text-cyan-400 text-sm font-bold">
@@ -89,7 +89,7 @@ const PricingPlans = () => {
         {/* Pricing Cards Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {plans.map((plan, index) => (
-            <div 
+            <div
               key={index}
               className={`relative border ${plan.popular ? 'border-cyan-500/50 shadow-[0_0_30px_rgba(6,182,212,0.15)] bg-white/10' : 'border-white/10 bg-white/5'} rounded-xl p-8 flex flex-col space-y-4 hover:shadow-2xl hover:border-white/20 transition-all duration-300 group backdrop-blur-sm`}
             >
@@ -98,7 +98,7 @@ const PricingPlans = () => {
                   Best Value
                 </div>
               )}
-              
+
               <div className="mb-4">
                 <h3 className="text-xl font-bold mb-2 text-white">{plan.name}</h3>
                 <div className="flex items-baseline gap-1">
@@ -120,14 +120,13 @@ const PricingPlans = () => {
                 </ul>
               </div>
 
-              <button 
-                className={`w-full py-4 rounded-lg font-bold text-sm transition-all duration-300 transform hover:-translate-y-1 ${
-                  plan.popular 
-                    ? 'bg-white text-[#0f172a] hover:bg-gray-100 shadow-[0_10px_20px_rgba(255,255,255,0.1)]' 
+              <button
+                className={`w-full py-4 rounded-lg font-bold text-sm transition-all duration-300 transform hover:-translate-y-1 ${plan.popular
+                    ? 'bg-white text-[#0f172a] hover:bg-gray-100 shadow-[0_10px_20px_rgba(255,255,255,0.1)]'
                     : plan.buttonVariant === 'solid'
-                    ? 'bg-cyan-500 text-[#0f172a] hover:bg-cyan-400 shadow-[0_10px_20px_rgba(6,182,212,0.1)]'
-                    : 'border border-white/20 text-white hover:bg-white/10'
-                }`}
+                      ? 'bg-cyan-500 text-[#0f172a] hover:bg-cyan-400 shadow-[0_10px_20px_rgba(6,182,212,0.1)]'
+                      : 'border border-white/20 text-white hover:bg-white/10'
+                  }`}
               >
                 {plan.buttonText}
               </button>
